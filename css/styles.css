@@ -1,0 +1,526 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(250, 227, 212);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header h1{
+    font-family: 'Righteous', cursive;
+    font-size: 1.5em;
+    padding-left: 20px;
+}
+
+nav.nav{
+    margin: auto;
+}
+
+.nav__responsive-ul{
+    display: none;
+}
+
+.nav__li {
+    display: inline-block;
+    padding: 12px;
+    padding-left: 30px
+}
+
+.nav__li a {
+    text-decoration: none;
+    color:rgb(240, 128, 128);
+    font-size: 1.3em;
+    font-family: 'Righteous', cursive;
+}
+
+.nav__li a:hover{
+    color: white;
+}
+
+.nav__responsive-button-container {
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color: rgb(250, 227, 212);
+    margin-top: -64px;
+    z-index: 100;
+}
+
+.nav__responsive-button{
+    padding: 6px 20px;
+    text-align: right;
+    float: right;
+}
+
+.nav__li-container {
+    position: relative;
+    top: -1000px;
+    background-color: rgb(250, 227, 212);
+    height: calc(100vh);
+    transition: all 1s;
+    width: 75%;
+    list-style: none;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header h1 a{
+    text-decoration: none;
+    color:rgb(240, 128, 128);
+}
+
+.principal {
+    width: 80%;
+    margin: auto;
+}
+
+.carrousel-conteiner {
+    position: relative;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.carrousel-element {
+    display: block;
+}
+
+.carrousel-element img {
+    margin: auto;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+dl, ol, ul{
+    margin-bottom: 0 !important;
+}
+
+ol, ul{
+    padding-left: 0 !important;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.contenedorcard {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 5px;
+}
+
+
+.contenedorcard a {
+    text-decoration: none;
+    color: white;
+}
+.cardson img {
+    display:block;
+    height: 100%;
+    width: 100%;
+}
+
+.cardson:hover .cardson-text{
+    transform: smooth;
+    transform: translateY(-35px);
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.cardson {
+    position: relative;
+    border-top: 3px solid rgb(240, 128, 128);
+    border-bottom: 3px solid rgb(240, 128, 128);
+}
+
+.cardson-text {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    font-family: 'Macondo', cursive;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px #1d1c1b;
+    font-size: 1.4em;
+}    
+
+
+footer {
+    background-color: rgb(250, 227, 212);
+    width: 100%;
+    padding: 2%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Righteous', cursive;
+    color:rgb(240, 128, 128);
+    margin-top: 5%;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover li {
+    transform: scale(1.5);
+    transition: all .8s;
+}
+
+footer ul {
+    margin: auto;
+    display: block;
+}
+
+footer ul li{
+    padding: 0.5em;
+    display: inline-block;
+}
+
+footer i {
+    margin-right: 1%;
+    color:rgb(240, 128, 128);
+}
+
+.nav__responsive-ul{
+    display: none;
+}
+
+form {
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.info {
+    background-color: rgb(250, 227, 212);
+    width: 100%;
+    padding: 25px;
+    font-size: 1.4em;
+    color:rgb(240, 128, 128);
+    text-align: center;
+    font-family: 'Righteous', cursive;
+}
+
+.contenedorCursos {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 15px;
+}
+
+.itemCursos {
+    border: 2px solid #e6e5e5;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.itemCursos:hover {
+    box-shadow: 0px 0px 7px 2px rgba(179,179,179,0.61);
+}
+
+.contenedorExamenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.itemExamenes {
+    border: 2px solid #e6e5e5;
+    text-align: center;
+    padding: 15px;
+   
+}
+
+.n45{
+    background-size: 100% 100%;
+    background-image:linear-gradient(to bottom,transparent 0 65%, #f7d3aa 65% 100%);
+    width: 70%;
+    margin:auto;
+    font-family: Calibri;
+    font-size: 1.3em;
+}
+
+.n32{
+    background-size: 100% 100%;
+    background-image:linear-gradient(to bottom,transparent 0 65%, #f594b1 65% 100%);
+    width: 70%;
+    margin:auto;
+    font-family: Calibri;
+    font-size: 1.3em;
+}
+
+.n1{
+    background-size: 100% 100%;
+    background-image:linear-gradient(to bottom,transparent 0 65%, #de84f5 65% 100%);
+    width: 70%;
+    margin:auto;
+    font-family: Calibri;
+    font-size: 1.3em;
+}
+
+#p-info{
+    font-family: Calibri;
+    margin-top: 4%;
+}
+
+.tit-cursos{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'Righteous', cursive;
+    color: #444;
+}
+
+p.description{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 4%;
+}
+
+.contenedorViajes {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.item-viajes {
+    position: relative;
+}
+
+p.viajes-tit {
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    font-family: 'Righteous', cursive;
+    color: rgb(72, 54, 88);
+    text-shadow: 0px 0px 0px rgb(72, 54, 88),
+                2px 2px 0px #f88bac,
+                4px 4px 0px #de84f5;
+    font-size: 4vw;
+} 
+
+p.viajes-dest {
+    position: absolute;
+    top: 20%;
+    left: 50px;
+    font-family: 'Righteous', cursive;
+    color: rgb(72, 54, 88);
+    text-shadow: 0px 0px 0px rgb(72, 54, 88),
+                2px 2px 0px #f88bac,
+                4px 4px 0px #de84f5;
+    font-size: 7vw;
+}  
+
+.item-info{
+    margin-left: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.item-info h1{
+    margin-bottom: 20px;
+    font-size:3em;
+}
+
+.item-info p {
+    font-size: 1.3em;
+}
+
+#botonformulario{
+    background-color: rgb(240, 128, 128);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border:none;
+    margin-top: 25px;
+    
+}
+
+.item-viajes {
+    width: 100%;
+    margin: auto;
+}
+
+.contenedorViajes img {
+    width: 100%;
+}
+
+.boton {
+    border-radius: 5px;
+    border: 1px solid rgb(240, 128, 128);
+    padding: 10px;
+    text-decoration: none;
+    color:rgb(240, 128, 128);
+    margin-top: 2%;
+    display: inline-block;
+}
+
+.mapa{
+    color:rgb(240, 128, 128);
+}
+
+.mapita{
+    width:400px;
+    height: 300px;
+}
+
+@media (max-width: 780px) {
+    .principal{
+        width: 100%;
+    }
+    .contenedorcard {
+        grid-template-columns: repeat(1,auto);
+    }
+    .cardson{
+        max-height: 250px;
+        max-width: 400px;
+        margin:auto;
+        margin-bottom: 2%;
+    }
+
+    .nav {
+        height: 37px;
+        width: 100%;
+    }
+
+    .nav__ul {
+        display: none;
+    }
+
+    .nav__responsive-ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 64px;
+        z-index: 1;
+        margin-top: 45px;
+        padding-top: 27px;
+        padding-left: 0!important;
+    }
+
+    .nav__responsive-button-container h1 {
+        font-size: 1.3em;
+        display: inline-block;
+    }
+
+    .nav__responsive-li{
+        font-size: 1.5em;
+        width: 100%;
+        padding: 9px 20px;
+        font-family: 'Righteous', cursive;
+    }
+
+    .nav__responsive-li:first-child{
+        padding-top: 40px;
+    }
+
+    .nav__responsive-li a {
+        text-decoration: none !important;
+
+        color:rgb(240, 128, 128);
+    }
+
+    .nav__responsive-li a:hover {
+        text-decoration: none !important;
+        color: white;
+    }
+
+    .nav__responsive-button i{
+        color:rgb(240, 128, 128);
+    }
+
+    .tit-cursos{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .contenedorCursos{
+        grid-template-columns: repeat(1,1fr);
+        width: 95%;
+        margin: auto;
+    }   
+
+    .contenedorExamenes{
+        grid-template-columns: repeat(1,1fr);
+        width: 95%;
+        margin: auto;
+    }
+
+    p.description{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 2%;
+    }
+
+    .contenedorExamenes .itemExamenes:nth-of-type(1){
+        /* n5 */
+        order:1;
+    }
+    
+    .contenedorExamenes .itemExamenes:nth-of-type(2){
+        /* n3 */
+        order:3;
+    }
+    
+    .contenedorExamenes .itemExamenes:nth-of-type(3){
+        /* n1 */
+        order:5;
+    }
+    
+    .contenedorExamenes .itemExamenes:nth-of-type(4){
+        order:2;
+    }
+    
+    .contenedorExamenes .itemExamenes:nth-of-type(5){
+        order:4;
+    }
+
+    .contenedorViajes {
+        grid-template-columns: repeat(1, auto);
+    
+    }
+
+    .item-viajes {
+        width: 90%;
+        margin: auto;
+    }
+
+    .contenedorViajes img {
+        width: 100%;
+    }
+
+    p.viajes-tit{
+        font-size: 1.5em;
+    }
+
+    p.viajes-dest{
+        font-size: 2em;
+    }
+
+    .contenedorViajes .item-info{
+        text-align: center;
+        margin-right: 25px;
+    }
+
+    .mapita{
+        width:300px;
+        height: 250px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .principal{
+        width: 100%;
+    }
+}
+
