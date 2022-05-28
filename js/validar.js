@@ -47,7 +47,8 @@ window.addEventListener('load', ()=> {
         }
 
         //validar checks
-        if(!checkIni.checked && !checkInt.checked && !checkInt.checked && !checkAva.checkExa && !checkVia.checked){
+        if(!checkIni.checked && !checkInt.checked && !checkInt.checked 
+            && !checkAva.checked && !checkExa.checked && !checkVia.checked){
             alert("Selecciona al menos una opción")
         } else {
             cantValidaciones++;
