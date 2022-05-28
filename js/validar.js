@@ -1,5 +1,5 @@
 window.addEventListener('load', ()=> {
-    const boton = document.querySelector('#boton')
+    const boton = document.querySelector('#botonformulario')
     const nombre = document.getElementById('nombre')
     const checkIni = document.getElementById('checkIni')
     const checkInt = document.getElementById('checkInt')
